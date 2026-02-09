@@ -10,7 +10,9 @@ Then, create an Abstract Class called DigitalWallet that implements PaymentMetho
 ## Part 1B: Create two concrete classes:
 - CreditCard (Directly implements PaymentMethod): Needs a limit and currentDebt. The authorize method should fail if the amount exceeds the limit.
 - CryptoWallet (Extends DigitalWallet): Needs a walletAddress. The authorize method must check if the balance is sufficient and then call deductBalance.
-- The Challenge: In your main method, create a List<PaymentMethod> checkoutCart. Add one Credit Card and two different Crypto Wallets. Loop through them and call authorize(100.0).
+
+The Challenge: In your main method, create a List<PaymentMethod> checkoutCart. Add one Credit Card and two different Crypto Wallets. Loop through them and call authorize(100.0).
+
 ## Part 1C: Write a method called processRefunds(List<PaymentMethod> methods).
 - If the method is a DigitalWallet, cast it and print "Refunding to email: [email]".
 - If it is a CreditCard, print "Adjusting debt for cardholder."
